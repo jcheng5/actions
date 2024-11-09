@@ -174,7 +174,7 @@ runs:
         shell: Rscript {0}
         working-directory: ${{ inputs.working-directory }}
 
-      - name: Adjust PATH to avoid using tar & zstd from Rtools
+      - name: Adjust PATH to avoid using zstd from Rtools
         if: runner.os == 'Windows'
         shell: bash
         run: |
