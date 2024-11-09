@@ -178,7 +178,6 @@ runs:
         if: runner.os == 'Windows'
         shell: bash
         run: |
-          echo 'C:/windows/system32' >> $GITHUB_PATH
           echo 'C:/tools/zstd' >> $GITHUB_PATH
 
       - name: R package cache
